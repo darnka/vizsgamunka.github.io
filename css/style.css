@@ -1,0 +1,300 @@
+@font-face {
+  font-family:"Montserrat-Regular";
+  src: url("/css/fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family:"Caveat-Regular";
+  src: url("/css/fonts/Caveat/static/Caveat-Regular.ttf");
+}
+
+@font-face {
+  font-family:"CinzelDecorative-Black";
+  src: url("/css/fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf");
+}
+@font-face {
+  font-family:"CinzelDecorative-Regular";
+  src: url("/css/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf");
+}
+
+body, html{
+  font-family:"Montserrat-Regular", sans-serif; 
+  color:black;
+  height: 100%;
+  background-color: #F9F4F1; 
+}
+
+h6{ 
+  font-size: smaller;
+  font-variant: small-caps; 
+}
+
+p{
+  color: #727272;
+}
+
+.display-1{
+  font-family:"CinzelDecorative-Black", serif; 
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  font-family:"CinzelDecorative-Black", serif; 
+}
+
+.irott{
+  font-family:"Caveat-Regular", serif;
+  font-size:x-large;
+  color: #f50097;
+}
+.irott1{
+  font-family:"Caveat-Regular", serif;
+  font-size:x-large;
+  color: white;
+}
+
+.szines {
+  font-family:"Montserrat-Regular", sans-serif;
+  position: relative; 
+}
+
+.szines::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(120deg, #0273fc 0%, #5df1e5 50%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.szines:hover::before {
+  transform: scaleX(1);
+}
+
+.hatter_diszes{
+  background-image:  url("/img/virag11.png"), url("/img/virag12.png");
+  background-size: 36%, 36%;
+  background-position: right top, left top;
+  background-repeat: no-repeat;
+}
+
+.kiemelt{
+  background-image:  url("/img/virag11.png"),  linear-gradient(150deg, #00787f, #4cafca, #0C478F);
+  background-size: 25%, 100%;
+  background-position: right top, left top;
+  background-repeat: no-repeat; 
+}
+
+.kiemelt1{
+  background-image: linear-gradient(150deg, #00787f, #4cafca, #0C478F);
+  background-size: 100%;
+  background-position:left top;
+  background-repeat: no-repeat; 
+}
+
+.elmosodott-image {
+  background-image:  url("/img/virag11.png"), url("/img/virag12.png"), linear-gradient(200deg, #01292b, #4cafca, #0a3263);
+  background-size: 36%, 36%, 100%;
+  background-position: right top, left top, left top;
+  background-repeat: no-repeat;
+  filter: brightness(110%);
+  height: 100%;
+  position: relative;
+}
+
+.elmosodott-text {
+  color: black; 
+  text-align: center;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  padding: 20px;
+  
+ -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.07); 
+}
+
+#color_fizetendo{
+  font-size: x-large;
+  color:#00787f;
+}
+
+nav{
+  background-color: #00787f;
+}
+
+.navbar-brand{
+  font-family:"CinzelDecorative-Black", serif; 
+  font-size: 2em;
+  color:white; 
+}
+
+.dropdown-menu{
+  border: solid 1px #00787f;
+  background-color: #00787f;
+}
+
+.dropdown-item:hover{
+  border: solid 1px #00787f;
+  background-color: #00787f;
+}
+
+a {
+  font-family:"Montserrat-Regular", sans-serif;
+  position: relative; 
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(120deg, #0273fc 0%, #5df1e5 50%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+hr{
+  color: #00787f;
+}
+
+table{
+  border: solid 1px;
+  border-radius: 15px 0 15px 0;
+}
+  
+.table-info{
+    background-color:#5df1e5;
+}
+
+details > summary {
+  color: black;
+  font-variant: small-caps;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 2%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(255, 255, 255, 0.3);
+}
+
+details > p{
+  padding: 4px;
+  text-indent: 20px; 
+}
+
+.szamol1{
+  background-image: linear-gradient(150deg, #00787f, #4cafca, #0C478F);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.szamol2{
+  width: 80%; 
+  height: 300px; 
+  border-radius: 15px 0 15px 0;
+}
+
+.ingatlanok1{
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.ingatlanok2{
+  background-image: linear-gradient(150deg, #00787f, #4cafca, #0C478F);
+  width: 80%; 
+  height: 300px; 
+  border-radius: 15px 0 15px 0;
+}
+
+.card{
+  background-color: white;
+  border-radius: 1%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-light{
+  color: white;
+  background-color: #00787f;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3), inset -1px -1px 2px rgba(255, 255, 255, 0.3);
+}
+.btn-light:hover{
+  color: white;
+  background-color: #00787f;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3), inset -1px -1px 2px rgba(255, 255, 255, 0.3);
+}
+
+
+#kepracs{
+  width: 100%;
+  grid-gap: 50px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap; 
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%; 
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+ 
+}
